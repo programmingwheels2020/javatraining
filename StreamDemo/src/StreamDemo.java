@@ -22,8 +22,6 @@ class Book {
 	public String toString() {
 		return "Book [title=" + title + ", author=" + author + ", price=" + price + "]";
 	}
-	
-	
 
 }
 
@@ -66,8 +64,23 @@ public class StreamDemo {
 
 		bookList.stream().filter((book) -> {
 			return book.price > 150.0;
-		}).forEach(x-> System.out.println(x));
+		}).forEach(x -> System.out.println(x));
 
+		// Collector Class
+		// Create new List
+		List<Book> bb = bookList.stream().filter((book) -> {
+			return book.price > 150.0;
+		}).collect(Collectors.toList());
+
+		// Create the sum of all the books price
+
+		Double totalPrice = bookList.stream().collect(Collectors.summingDouble(x -> x.price));
+
+		System.out.println(totalPrice);
+		
+		Double avgPrice = bookList.stream().collect(Collectors.averagingDouble(x->x.price));
+	    
+		System.out.println(avgPrice);
 	}
 
 }
