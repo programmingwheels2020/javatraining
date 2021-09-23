@@ -15,6 +15,7 @@ public class App
         
         Player player = (Player)ctx.getBean("player");
         
+       
         System.out.println(player);
     }
 }

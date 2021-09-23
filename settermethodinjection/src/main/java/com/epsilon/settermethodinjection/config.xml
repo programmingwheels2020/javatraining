@@ -8,6 +8,25 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
+	<bean name="club" class="com.epsilon.settermethodinjection.Club">
+		<property name="name" value="Manchester United" />
+		<property name="country" value="England" />
+		<property name="leagueName" value="English Premier League" />
+	</bean>
+
+	<bean name="club1" class="com.epsilon.settermethodinjection.Club">
+		<property name="name" value="Liverpool" />
+		<property name="country" value="England" />
+		<property name="leagueName" value="English Premier League" />
+	</bean>
+
+	<bean name="club2" class="com.epsilon.settermethodinjection.Club">
+		<property name="name" value="FC Barcelona" />
+		<property name="country" value="Spain" />
+		<property name="leagueName" value="La Liga" />
+	</bean>
+
+
 	<bean name="player"
 		class="com.epsilon.settermethodinjection.Player">
 
@@ -15,17 +34,34 @@
 			<value>Lionell Messi</value>
 		</property>
 		<property name="rating">
-		  <value>95</value>
+			<value>95</value>
 		</property>
-		
+
 		<property name="position">
-		 <value>RW</value>
+			<value>RW</value>
+		</property>
+
+		<property name="country" value="Argentina" />
+		<property name="club" ref="club"></property>
+
+		<property name="previousClubs">
+			<list>
+				<ref bean="club1" />
+				<ref bean="club2" />
+			</list>
 		</property>
 		
-		<property name="country" value="Argentina" />
-		 
+		<property name="skills">
+		  <map>
+		   <entry key="PAC" value="91"></entry>
+		   <entry key="DEF" value="35"></entry>
+		   <entry key="DRI" value="95"></entry>
+		  </map>
+		</property>
+
+
 	</bean>
-	
-	
+
+
 
 </beans>
