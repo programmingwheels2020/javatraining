@@ -37,7 +37,7 @@
 		<constructor-arg value="Lionell Messi"></constructor-arg>
 		<constructor-arg value="Argentina"></constructor-arg>
 		<constructor-arg>
-			<ref bean="club" />
+			<idref bean="club" />
 		</constructor-arg>
 
 		<constructor-arg>
