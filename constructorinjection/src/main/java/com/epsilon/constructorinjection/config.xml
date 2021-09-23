@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean id="club" class="com.epsilon.constructorinjection.Club">
+		<constructor-arg value="Manchester United"></constructor-arg>
+		<constructor-arg value="England"></constructor-arg>
+		<constructor-arg value="EPL"></constructor-arg>
+	</bean>
+
+	<bean name="club1" class="com.epsilon.constructorinjection.Club">
+		<constructor-arg value="Chelease FC"></constructor-arg>
+		<constructor-arg value="England"></constructor-arg>
+		<constructor-arg value="EPL"></constructor-arg>
+	</bean>
+	<bean name="club2" class="com.epsilon.constructorinjection.Club">
+		<constructor-arg value="Everton"></constructor-arg>
+		<constructor-arg value="England"></constructor-arg>
+		<constructor-arg value="EPL"></constructor-arg>
+	</bean>
+	<bean name="club3" class="com.epsilon.constructorinjection.Club">
+		<constructor-arg value="Dortmund"></constructor-arg>
+		<constructor-arg value="Germany"></constructor-arg>
+		<constructor-arg value="Bundes Liga"></constructor-arg>
+	</bean>
+
+	<bean name="player"
+		class="com.epsilon.constructorinjection.Player">
+
+		<constructor-arg value="34" type="int"></constructor-arg>
+		<constructor-arg value="Lionell Messi"></constructor-arg>
+		<constructor-arg value="Argentina"></constructor-arg>
+		<constructor-arg>
+			<ref bean="club" />
+		</constructor-arg>
+
+		<constructor-arg>
+			<list>
+				<ref bean="club1" />
+				<ref bean="club2" />
+				<ref bean="club3" />
+			</list>
+		</constructor-arg>
+		<constructor-arg>
+			<map>
+				<entry key="PAC" value="91"></entry>
+				<entry key="DEF" value="35"></entry>
+				<entry key="DRI" value="95"></entry>
+			</map>
+		</constructor-arg>
+
+
+	</bean>
+	
+
+</beans>
