@@ -2,7 +2,7 @@
 
 public class WindowsMachine {
 	
-	public  Keyboard keyboard;
+	public  Keyboard keyboard ;
 	public  Mouse mouse;
 	
 	public String version;

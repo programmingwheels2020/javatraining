@@ -10,6 +10,7 @@ public class SOLIDDemo {
 		Mouse mo = new IBallMouse();
 		
 		WindowsMachine wm = new WindowsMachine("11",kb,mo);
+		
 
 	}
 
