@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:annotation-config />
+	<context:component-scan base-package="com.epsilon.autowiring"></context:component-scan>
+	
+
+	<bean name="book" class="com.epsilon.autowiring.Book" >
+		
+		<property name="title" value="My Autobiography" />
+		<property name="author" value="Lenin Lawrence" />
+	</bean>
+
+</beans>
