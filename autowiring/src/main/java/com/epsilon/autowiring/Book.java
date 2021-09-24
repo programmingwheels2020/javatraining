@@ -1,11 +1,16 @@
 package com.epsilon.autowiring;
 
 import org.springframework.beans.factory.annotation.Autowired;
+
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
+import javax.annotation.*;
+
 @Component
+@Scope("singleton")
 public class Book {
 
 	@Value("My Autobiography")
@@ -57,6 +62,16 @@ public class Book {
 	@Override
 	public String toString() {
 		return "Book [title=" + title + ", author=" + author + ", publisher=" + publisher + "]";
+	}
+	
+
+	
+	public void init() {
+		System.out.println("Bean Initialized");
+	}
+	
+	public void stop() {
+		System.out.println("Bean is destroyed");
 	}
 
 }

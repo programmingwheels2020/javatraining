@@ -8,14 +8,26 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <context:annotation-config />
-	<context:component-scan base-package="com.epsilon.autowiring"></context:component-scan>
-	
+	<context:annotation-config />
+	<context:component-scan
+		base-package="com.epsilon.autowiring"></context:component-scan>
 
-	<bean name="book" class="com.epsilon.autowiring.Book" >
-		
+
+	
+	<bean name="book" class="com.epsilon.autowiring.Book" depends-on="publisher" scope="prototype" >
+
 		<property name="title" value="My Autobiography" />
 		<property name="author" value="Lenin Lawrence" />
+		<property name="publisher">
+			<ref bean="publisher" />
+		</property>
 	</bean>
+	<bean name="publisher" class="com.epsilon.autowiring.Publisher">
+		<property name="name" value="ABC Publisher" />
+		<property name="city" value="Delhi" />
+	</bean>
+	
+
+
 
 </beans>
