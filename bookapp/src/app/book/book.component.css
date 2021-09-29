@@ -1,0 +1,14 @@
+.book{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rebeccapurple;
+    margin-bottom: 10px;
+    width: 300px;
+    height: 150px;
+}
+.bookImage{
+   width: 300px;
+   height: 150px;
+
+}
