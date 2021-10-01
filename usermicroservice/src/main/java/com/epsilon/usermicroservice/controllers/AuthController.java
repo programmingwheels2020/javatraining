@@ -17,6 +17,7 @@ public class AuthController {
 	@Autowired
 	private UserService userService;
 	
+	@Autowired
 	private NotificationService nService;
 	
 	
@@ -24,7 +25,7 @@ public class AuthController {
 	public void Register(@RequestBody User user) throws Exception {
 		List<User> existingUsers = this.userService.getUserByEmail(user.getEmail());
 		
-		if(existingUsers.size()>0) {
+		if(existingUsers == null || existingUsers.size()>0) {
 			throw new Exception("User with same email Exists");
 		}
 		
