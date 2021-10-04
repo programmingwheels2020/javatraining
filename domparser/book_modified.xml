@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog>
+       
+    <book id="bk101">
+              
+        <author>GAMBARDELLA, MATTHEW</author>
+              
+        <title>XML Developer's Guide</title>
+              
+        <genre>Computer</genre>
+              
+        <price>44.95</price>
+              
+        <publish_date>2000-10-01</publish_date>
+              
+   
+        <url>https://www.amazon.com/</url>
+    </book>
+       
+    <book id="bk102">
+              
+        <author>RALLS, KIM</author>
+              
+        <title>Midnight Rain</title>
+              
+        <genre>Fantasy</genre>
+              
+        <price>5.95</price>
+              
+        <publish_date>2000-12-16</publish_date>
+              
+   
+        <url>https://www.amazon.com/</url>
+    </book>
+       
+    <book id="bk103">
+              
+        <author>CORETS, EVA</author>
+              
+        <title>Maeve Ascendant</title>
+              
+        <genre>Fantasy</genre>
+              
+        <price>5.95</price>
+              
+        <publish_date>2000-11-17</publish_date>
+              
+   
+        <url>https://www.amazon.com/</url>
+    </book>
+       
+    <book id="bk104">
+              
+        <author>CORETS, EVA</author>
+              
+        <title>Oberon's Legacy</title>
+              
+        <genre>Fantasy</genre>
+              
+        <price>5.95</price>
+              
+        <publish_date>2001-03-10</publish_date>
+              
+   
+        <url>https://www.amazon.com/</url>
+    </book>
+       
+    <book id="bk105">
+              
+        <author>CORETS, EVA</author>
+              
+        <title>The Sundered Grail</title>
+              
+        <genre>Fantasy</genre>
+              
+        <price>5.95</price>
+              
+        <publish_date>2001-09-10</publish_date>
+              
+   
+        <url>https://www.amazon.com/</url>
+    </book>
+       
+    <book id="bk106">
+              
+        <author>RANDALL, CYNTHIA</author>
+              
+        <title>Lover Birds</title>
+              
+        <genre>Romance</genre>
+              
+        <price>4.95</price>
+              
+        <publish_date>2000-09-02</publish_date>
+              
+   
+        <url>https://www.amazon.com/</url>
+    </book>
+       
+    <book id="bk107">
+              
+        <author>THURMAN, PAULA</author>
+              
+        <title>Splish Splash</title>
+              
+        <genre>Romance</genre>
+              
+        <price>4.95</price>
+              
+        <publish_date>2000-11-02</publish_date>
+              
+   
+        <url>https://www.amazon.com/</url>
+    </book>
+       
+    <book id="bk108">
+              
+        <author>KNORR, STEFAN</author>
+              
+        <title>Creepy Crawlies</title>
+              
+        <genre>Horror</genre>
+              
+        <price>4.95</price>
+              
+        <publish_date>2000-12-06</publish_date>
+              
+   
+        <url>https://www.amazon.com/</url>
+    </book>
+       
+    <book id="bk109">
+              
+        <author>KRESS, PETER</author>
+              
+        <title>Paradox Lost</title>
+              
+        <genre>Science Fiction</genre>
+              
+        <price>6.95</price>
+              
+        <publish_date>2000-11-02</publish_date>
+              
+   
+        <url>https://www.amazon.com/</url>
+    </book>
+       
+    <book id="bk110">
+              
+        <author>O'BRIEN, TIM</author>
+              
+        <title>Microsoft .NET: The Programming Bible</title>
+              
+        <genre>Computer</genre>
+              
+        <price>36.95</price>
+              
+        <publish_date>2000-12-09</publish_date>
+              
+   
+        <url>https://www.amazon.com/</url>
+    </book>
+       
+    <book id="bk111">
+              
+        <author>O'BRIEN, TIM</author>
+              
+        <title>MSXML3: A Comprehensive Guide</title>
+              
+        <genre>Computer</genre>
+              
+        <price>36.95</price>
+              
+        <publish_date>2000-12-01</publish_date>
+              
+   
+        <url>https://www.amazon.com/</url>
+    </book>
+       
+    <book id="bk112">
+              
+        <author>GALOS, MIKE</author>
+              
+        <title>Visual Studio 7: A Comprehensive Guide</title>
+              
+        <genre>Computer</genre>
+              
+        <price>49.95</price>
+              
+        <publish_date>2001-04-16</publish_date>
+              
+   
+        <url>https://www.amazon.com/</url>
+    </book>
+    
+</catalog>
