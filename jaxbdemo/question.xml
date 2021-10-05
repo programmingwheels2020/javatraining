@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<questionsAndAnswers>
+    <answer>
+        <answer>Bangalore</answer>
+        <id>1001</id>
+    </answer>
+    <answer>
+        <answer>Hyderbad</answer>
+        <id>1002</id>
+    </answer>
+    <answer>
+        <answer>Mumbai</answer>
+        <id>1003</id>
+    </answer>
+    <answer>
+        <answer>Chandigarh</answer>
+        <id>1004</id>
+    </answer>
+    <question>Which indian city good for living condition</question>
+</questionsAndAnswers>
