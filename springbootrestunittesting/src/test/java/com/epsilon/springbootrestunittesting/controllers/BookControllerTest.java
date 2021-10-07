@@ -15,26 +15,37 @@ import org.springframework.test.web.servlet.ResultMatcher;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
 
-@WebMvcTest(value = WelcomeController.class)
-class WelcomeControllerTest {
+@WebMvcTest(value = BookController.class)
+class BookControllerTest {
 
 	@Autowired
 	private MockMvc mockMvc;
 	
 	@Test
-	void Welcome_Basic() throws Exception {
+	void BookApi_Basic() throws Exception {
 		
-		RequestBuilder request = MockMvcRequestBuilders.get("/welcome").accept(MediaType.APPLICATION_JSON);
+		RequestBuilder request = MockMvcRequestBuilders.get("/book").accept(MediaType.APPLICATION_JSON);
 		
 		MvcResult result = mockMvc.perform(request)
 				.andExpect(status().isOk())
-				.andExpect(content().string("Welcome"))
+				.andExpect(content().json("{\"id\":1,\"title\":\"This is new Book\"}"))
 				.andReturn();
-			                  
-	   
-	   //System.out.println(result.getResponse().getStatus());
-	   
-	   //assertEquals("Welcome", result.getResponse().getContentAsString());
+			   
+	}
+	
+	@Test
+	void BookApi_Multiple() throws Exception {
+		
+		RequestBuilder request = MockMvcRequestBuilders.get("/books").accept(MediaType.APPLICATION_JSON);
+		
+		MvcResult result = mockMvc.perform(request)
+				.andExpect(status().isOk())
+				.andExpect(content().json("[{\"id\":1},{\"id\":2}]"))
+				//.andExpect(content().json())
+				.andReturn();
+		
+		
+			   
 	}
 
 }
