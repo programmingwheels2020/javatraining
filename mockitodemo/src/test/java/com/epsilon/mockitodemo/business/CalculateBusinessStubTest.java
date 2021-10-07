@@ -5,16 +5,25 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.junit.jupiter.MockitoExtension;
 
 import com.epsilon.mockitodemo.service.DataService;
 
 
 
+@ExtendWith(MockitoExtension.class)
 class CalculateBusinessStubTest {
 	
-	CalculateBusiness cb = new CalculateBusiness();
 	
-	DataService dataServiceMock =  mock(DataService.class);
+	@InjectMocks
+	CalculateBusiness cb;
+	
+	
+	@Mock
+	DataService dataServiceMock;
 	
 	
 
@@ -23,8 +32,6 @@ class CalculateBusinessStubTest {
 		
 		when(dataServiceMock.getData()).thenReturn(new int[] {1,2,3,4,5,6});
 		
-	    cb.setDataService(dataServiceMock);
-	    
 	    int actual = cb.sum();
 		int expected = 21;
 		
@@ -38,8 +45,6 @@ class CalculateBusinessStubTest {
 		
 	    when(dataServiceMock.getData()).thenReturn(new int[] {});
 		
-	    cb.setDataService(dataServiceMock);
-	    
 	    int actual = cb.sum();
 		int expected = 0;
 		
@@ -52,8 +57,6 @@ class CalculateBusinessStubTest {
 		
 		when(dataServiceMock.getData()).thenReturn(new int[] {2});
 		
-	    cb.setDataService(dataServiceMock);
-	    
 	    int actual = cb.sum();
 		int expected = 2;
 		

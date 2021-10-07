@@ -27,6 +27,8 @@ public class CalculateBusiness {
 		for (int a : data) {
 			sum += a;
 		}
+		
+		//dataService.saveSum(sum);
 		return sum;
 	}
 }
