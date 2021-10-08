@@ -1,7 +1,12 @@
 package com.epsilon.springbootrestunittesting.models;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity(name = "book")
 public class Book {
 
+	@Id
 	private int id;
 	private String title;
 	private String author;
