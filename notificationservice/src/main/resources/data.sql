@@ -1,0 +1,1 @@
+insert into BOOK(id,title,author) values (1,'ONE','Lenin);
